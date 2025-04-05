@@ -28,13 +28,18 @@ p{
     margin:0;
 }
 .container{
-    background-color: red;
     max-width: 1200px;
     width:100%;
+    margin: 0 auto;
 }
 /* !base end */
 
 /*!header start  */
+
+header{
+    border-bottom:1px solid #dee0ea;
+    align-items: center;
+}
 .global-notification{
     background-color: #1367ef;
     padding:14px 0;
@@ -48,8 +53,50 @@ p{
     font-weight: 600;
 }
 
+.header-row{
+    height:90px;
+    display: flex;
+    align-items:center;
+
+}
 .header-wrapper{
    display:flex; 
    justify-content:space-between;
 }
+.header-left .logo{
+    font-size: 24px;
+    font-weight:500 ;
+    display: flex;
+}
+.header-center .navigation .menu-list{
+    display: flex;
+    column-gap: 30px; /* !Birbirinden uzaklaştırmaya yarıyor.*/
+    align-items:center;
+}
+.header-center .menu-list .menu-link{
+   font-size:14px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing:1.2px ;
+}
+.header-center .menu-link i{
+    font-size:12px;
+    
+ }
+ .header-right .header-right-links{
+    display: flex;
+    align-items:center;
+    column-gap: 16px;
+ }
+ .header-right .bi-person{
+    font-size:23px;
+ }
+ .header-right .search-toggle{
+    border:none;
+    background-color:transparent;
+ }
+ .header-right .search-toggle{
+    border:none;
+    background-color:transparent;
+ }
 /*!header end  */
